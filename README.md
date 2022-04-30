@@ -48,7 +48,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## 1. Repository stage
 1) Create the repository on Github
 2) Clone this repository
-  git clone <repositoryName>
+  git clone repositoryName
 3) Create react app
   npx create-react-app . --template typescript
 
@@ -60,10 +60,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## 3. Deployment stage to Github
 1) Add 'homepage' key to package.json
-  "homepage": "https://<accountName>.github.io/<repositoryName>"
+  "homepage": "https://accountName.github.io/repositoryName"
 2) Install gh-page package
   npm install --save gh-pages
 3) Add deploy console command to package.json
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
+4) Delete useless files
+  git add . && git commit -am 'Delete useless files'
   
