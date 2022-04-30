@@ -44,3 +44,26 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 1. Repository stage
+1) Create the repository on Github
+2) Clone this repository
+  git clone <repositoryName>
+3) Create react app
+  npx create-react-app . --template typescript
+
+## 2. Git stage
+1) Commit first changes
+  git add . && git commit -m 'Init project'
+2) Push first changes
+  git push -u origin main
+
+## 3. Deployment stage to Github
+1) Add 'homepage' key to package.json
+  "homepage": "https://<accountName>.github.io/<repositoryName>"
+2) Install gh-page package
+  npm install --save gh-pages
+3) Add deploy console command to package.json
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  
